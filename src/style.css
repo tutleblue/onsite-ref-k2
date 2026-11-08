@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-size: 15px;
+  color: #222;
+  background: #f6f6f4;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  min-width: 900px;
+}
+.logo {
+  font-size: 18px;
+}
+nav {
+  display: flex;
+  gap: 4px;
+}
+nav a {
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #444;
+  border-radius: 6px;
+}
+nav a.on {
+  background: #222;
+  color: #fff;
+}
+.clock {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+}
+button {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid #222;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button.ghost {
+  background: #fff;
+  color: #222;
+}
+main {
+  padding: 16px 20px;
+}
+.summary {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.sum {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left-width: 6px;
+  padding: 10px 14px;
+  min-width: 160px;
+}
+.sum b {
+  font-size: 20px;
+  margin-left: 6px;
+}
+.ch-jugeok {
+  border-color: #e0802a;
+}
+.ch-ppalliwa {
+  border-color: #2a8a4a;
+}
+.ch-dongnae {
+  border-color: #2a62c4;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+}
+.badge.ch-jugeok {
+  background: #e0802a;
+}
+.badge.ch-ppalliwa {
+  background: #2a8a4a;
+}
+.badge.ch-dongnae {
+  background: #2a62c4;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.tabs button {
+  background: #fff;
+  color: #222;
+}
+.tabs button.on {
+  background: #222;
+  color: #fff;
+}
+table.orders {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+  background: #fff;
+}
+.orders th,
+.orders td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.orders th {
+  background: #efefec;
+  font-size: 13px;
+}
+tr.is-new {
+  background: #fffbe8;
+}
+.mono {
+  font-family: monospace;
+  font-size: 13px;
+}
+.opt {
+  color: #777;
+  font-size: 13px;
+}
+.req {
+  background: #ffe36b;
+  padding: 1px 4px;
+}
+.actions {
+  white-space: nowrap;
+}
+.actions select {
+  font: inherit;
+  padding: 5px;
+  margin-right: 4px;
+}
+.empty {
+  color: #888;
+  padding: 24px 0;
+}
+.empty.big {
+  font-size: 28px;
+  text-align: center;
+}
+
+/* 주방 화면 */
+.kitchen-mode body,
+.kitchen-mode {
+  background: #1d1d1d;
+  min-height: 100vh;
+}
+.kitchen-mode main {
+  color: #fff;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.kcard {
+  background: #fff;
+  color: #111;
+  border-radius: 8px;
+  padding: 16px;
+  border-top: 10px solid #999;
+}
+.kcard.cooking {
+  border-top-color: #e04a2a;
+}
+.khead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.khead .late {
+  color: #d01b1b;
+  font-weight: bold;
+}
+.kcard ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.kcard li {
+  font-size: 30px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.kopt {
+  font-size: 22px;
+  color: #b3261e;
+}
+.kreq {
+  margin-top: 12px;
+  background: #ffe36b;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 10px;
+}
+.kact {
+  margin-top: 14px;
+  text-align: right;
+}
+.kact button {
+  font-size: 18px;
+  padding: 10px 18px;
+}
